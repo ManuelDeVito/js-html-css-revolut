@@ -2,36 +2,20 @@
 
 $(document).ready(function() {
 
-    $('.funz').mouseenter(function(){
-        $('.dropdown-menu-funz').addClass('active')
-    })
 
-    $('.funz').mouseleave(function(){
-        $('.dropdown-menu-funz').removeClass('active')
-    })
+    $('.header-right ul li').mouseenter(function() {
 
-    $('.abb').mouseenter(function(){
-        $('.dropdown-menu-funz').addClass('active')
-    })
 
-    $('.abb').mouseleave(function(){
-        $('.dropdown-menu-funz').removeClass('active')
-    })
+        $(this).children('.drop-menu').addClass('active');
 
-    $('.chi').mouseenter(function(){
-        $('.dropdown-menu-funz').addClass('active')
-    })
+    });
 
-    $('.chi').mouseleave(function(){
-        $('.dropdown-menu-funz').removeClass('active')
-    })
+    $('.header-right ul li').mouseleave(function() {
 
-    $('.aiu').mouseenter(function(){
-        $('.dropdown-menu-funz').addClass('active')
-    })
 
-    $('.aiu').mouseleave(function(){
-        $('.dropdown-menu-funz').removeClass('active')
-    })
+        $(this).children('.drop-menu').removeClass('active');
+
+    });
+
 
 });

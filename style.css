@@ -7,27 +7,25 @@
 #wrapper {
     height: 100px;
     width: 100%;
-    background-color: lightblue;
+    background-color: lightgrey;
     display: flex;
     justify-content: space-between;
 }
 
 .header-left {
     height: 100%;
-    width: 300px;
-    background-color: red;
-    display: inline-block;
-
+    width: 500px;
 }
 
 .logo {
-    height: 100px;
-
+    max-height: 100px;
+    float: left;
 }
 
-.header-left span {
+.list span {
     font-size: 20px;
-
+    float: left;
+    padding: 40px;
 }
 
 .header-right ul {
@@ -41,6 +39,18 @@
     line-height: 100px;
     padding: 0 30px;
     font-size: 20px;
+    position: relative;
+}
+
+.header-right ul li .drop-menu {
+    display: none;
+    position: absolute;
+    top: 110px;
+    left:0px;
+}
+
+.header-right ul li .drop-menu.active {
+    display: block;
 }
 
 .header-right ul li:last-child{
@@ -49,79 +59,17 @@
 
 .header-right ul li a {
     text-decoration: none;
-
+    color: black;
 }
 
-.dropdown-menu-funz {
+.drop-menu {
     height: 400px;
     width: 150px;
-    background-color: pink;
-    margin-top: 20px;
+    background-color: lightgreen;
     display: none;
-
 }
 
-.dropdown-menu-abb {
-    height: 400px;
-    width: 150px;
-    background-color: pink;
-    margin-top: 20px;
-    display: none;
-
-}
-
-.dropdown-menu-chi {
-    height: 400px;
-    width: 150px;
-    background-color: pink;
-    margin-top: 20px;
-    display: none;
-
-}
-
-.dropdown-menu-aiu{
-    height: 400px;
-    width: 150px;
-    background-color: pink;
-    margin-top: 20px;
-    display: none;
-
-}
-
-.dropdown-menu-funz.active {
-    display: block;
-}
-
-.dropdown-menu-abb.active {
-    display: block;
-}
-
-.dropdown-menu-chi.active {
-    display: block;
-}
-
-.dropdown-menu-aiu.active {
-    display: block;
-}
-
-
-.dropdown-menu-funz a {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.dropdown-menu-abb a {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}
-.dropdown-menu-chi a {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}
-.dropdown-menu-aiu a {
+.drop-menu a {
     display:flex;
     flex-direction: column;
     align-items: center;
